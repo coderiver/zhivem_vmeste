@@ -1,0 +1,60 @@
+
+.members
+.members__filters
+	&.members__filters_extra
+		.row
+			max-width: 340px
+		.group
+			a
+				border-bottom: 1px dotted $blue
+				text-decoration: none
+				&:hover
+					border-color: transparent
+.members__reg
+	padding-top: 50px
+.members__reg-content
+	margin-left: 20px
+.members__list
+.members__item
+	position: relative
+	+clr
+	margin-bottom: 20px
+.members__picture
+	float: left
+	margin-right: 15px
+	width: 64px
+	height: 64px
+	overflow: hidden
+	border: 1px solid $grey_light
+	padding: 1px
+	background: #fff
+	+box
+	img
+		display: block
+		max-width: 60px
+		min-height: 60px
+	a
+		display: block
+.members__info
+	float: left
+	width: 55%
+	margin-top: 10px
+.members__flat
+	color: $grey_light
+.members__name
+	font-weight: bold
+	font-size: 16px
+	line-height: 1.2
+	+text-overflow
+	color: $blue
+	a
+		border-bottom: 1px solid #a3d7ed
+		text-decoration: none
+		&:hover
+			border-bottom: none
+.members__link
+	position: absolute
+	right: 0
+	bottom: 11px
+	a
+		color: $grey

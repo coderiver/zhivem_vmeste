@@ -1,0 +1,218 @@
+<!doctype html>
+<!--[if lte IE 8]><html class="lteie8"><![endif]-->
+<!--[if gt IE 8]><!--><html><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>house</title>
+	<meta name="viewport" content="initial-scale=1"/>
+	<link rel="stylesheet" media="screen" href="css/screen.css" >
+	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
+	<script src="js/jquery-1.9.1.min.js"></script>
+	<script src="js/jquery.cycle2.min.js"></script>
+	<script src="js/common.js"></script>
+</head>
+<body>
+
+<!-- BEGIN  out-->
+<div class="out">
+	<!-- BEGIN header -->
+	<div class="header">
+		<div class="header__in">
+			<h1 class="header__logo"><a href="#">Живём вместе</a></h1>
+			<div class="header__menu">
+				<ul class="header__menu-column">
+					<li class="header__menu-clause">
+						<a href="#">
+							<i class="header__menu-icon icon-about"></i>
+							<b>О квартале</b>
+						</a>
+					</li>
+					<li class="header__menu-clause">
+						<a href="#">
+							<i class="header__menu-icon icon-news"></i>
+							<b>Новости</b>
+						</a>
+					</li>
+				</ul>
+				<ul class="header__menu-column">
+					<li class="header__menu-clause">
+						<a href="#">
+							<i class="header__menu-icon icon-community"></i>
+							<b>Общение</b>
+						</a>
+					</li>
+					<li class="header__menu-clause">
+						<a href="#">
+							<i class="header__menu-icon icon-members"></i>
+							<b>Ваши соседи</b>
+						</a>
+					</li>
+				</ul>
+				<ul class="header__menu-column">
+					<li class="header__menu-clause">
+						<a href="#">
+							<i class="header__menu-icon icon-building"></i>
+							<b>Стройплощадка</b>
+						</a>
+					</li>
+					<li class="header__menu-clause">
+						<a href="#">
+							<i class="header__menu-icon icon-partners"></i>
+							<b>Партнеры «Живём вместе»</b>
+						</a>
+					</li>
+				</ul>
+				<ul class="header__menu-column header__menu-column_extra">
+					<li class="header__menu-clause">
+						<a class="g-pseudo-link" href="#">
+							<i class="header__menu-icon icon-help"></i>
+							есть вопрос?
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="profile g-box">
+				<ul class="profile__user">
+					<li>
+						<a href="#">
+							<img class="profile__userpic" src="img/avatar.png" alt="avatar">
+							<span class="profile__username">Модератор проекта</span>
+						</a>
+					</li>
+					<li><a href="#"><b>Личный кабинет</b></a></li>
+				</ul>
+				<ul class="profile__command">
+					<li><a href="#"><b>Выйти</b></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- END header -->
+	<!-- BEGIN page -->
+	<div class="page">
+		<!-- BEGIN container -->
+		<div class="container container_extra members">
+			<h2 class="h2">Ваши соседи</h2>
+			<!-- BEGIN pager -->
+			<ul class="pager">
+				<li class="pager__previous"><a href="#">&larr; вернуться назад</a></li>
+			</ul>
+			<!-- END pager -->
+			<div class="members__filters members__filters_extra">
+				<div class="dropdown js-drop is-open">
+					<div class="btn-toggle"><a class="g-pseudo-link" href="#">Корпус 10</a></div>
+					<div class="dropdown__content">
+						<div class="row">
+							<div class="group">
+								<span class="group__help">выберите нужную секцию</span>
+								<ul>
+									<li><a href="#">Секция 1</a></li>
+									<li><a href="#">Секция 2</a></li>
+									<li class="is-active"><a href="#">Секция 3</a></li>
+									<li><a href="#">Секция 4</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="row">
+							<h3 class="h3">Этаж</h3>
+							<div class="group">
+								<span class="group__help">выберите нужный этаж</span>
+								<ul>
+									<li><a href="#">1 этаж</a></li>
+									<li><a href="#">2 этаж</a></li>
+									<li><a href="#">3 этаж</a></li>
+									<li class="is-active"><a href="#">4 этаж</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="row">
+							<h3 class="h3">Квартира</h3>
+							<div class="group group_mod">
+								<span class="group__help">выберите нужную квартиру</span>
+								<ul>
+									<li><a href="#">№10</a></li>
+									<li><a href="#">№26</a></li>
+									<li><a href="#">№53</a></li>
+									<li><a href="#">№59</a></li>
+									<li><a href="#">№10</a></li>
+									<li><a href="#">№12</a></li>
+									<li><a href="#">№28</a></li>
+									<li><a href="#">№55</a></li>
+									<li><a href="#">№62</a></li>
+									<li><a href="#">№12</a></li>
+								</ul>
+							</div>
+							<!-- <ul class="group">
+							</ul> -->
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="members__reg">
+				<h2 class="h2">В этом доме зарегистрированы:</h2>
+				<div class="members__reg-content">
+					<h4 class="h4 hline"><span>1 этаж</span></h4>
+					<ul class="members__list">
+						<li class="members__item">
+							<div class="members__picture">
+								<a href="#"><img src="img/member.jpg" alt="avatar"></a>
+							</div>
+							<div class="members__info">
+								<div class="members__flat">1 квартира</div>
+								<div class="members__name"><a href="#">Брыкин Константин Иванович</a></div>
+							</div>
+							<div class="members__link"><a href="#">отправить сообщение &rarr;</a></div>
+						</li>
+						<li class="members__item">
+							<div class="members__picture">
+								<a href="#"><img src="img/member.jpg" alt="avatar"></a>
+							</div>
+							<div class="members__info">
+								<div class="members__flat">10 квартира</div>
+								<div class="members__name"><a href="#">Рубанова Анна Григорьевна</a></div>
+							</div>
+							<div class="members__link"><a href="#">отправить сообщение &rarr;</a></div>
+						</li>
+						<li class="members__item">
+							<div class="members__picture">
+								<a href="#"><img src="img/member.jpg" alt="avatar"></a>
+							</div>
+							<div class="members__info">
+								<div class="members__flat">2 квартира</div>
+								<div class="members__name"><a href="#">Радошкевич Олег Сергеевич</a></div>
+							</div>
+							<div class="members__link"><a href="#">отправить сообщение &rarr;</a></div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- END container -->
+	</div>
+	<!-- END page -->
+
+	<div class="push"></div>
+</div>
+<!-- END out-->
+<!-- BEGIN footer -->
+<div class="footer">
+	<div class="footer__in">
+		<div class="footer__left">
+			<div class="footer__copy">© «Живём вместе», 2011–2013</div>
+			<div class="footer__info">
+				<p>Совместный проект «РАСТ» и «<a href="#">БЕСТ-Новосторой</a>»</p>
+				<p><a href="#">Документы ЖСК</a></p>
+			</div>
+		</div>
+		<div class="madeinrussia">
+			<p>Сайт сделан в студии	<a class="madeinrussia__icon" href="#">Made In Russia</a></p>
+			<p><a href="#">Информация о сайте</a></p>
+		</div>
+	</div>
+</div>
+<!-- END footer -->
+
+
+</body>
+</html>

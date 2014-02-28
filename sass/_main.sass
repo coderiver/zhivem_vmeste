@@ -1,2 +1,295 @@
-// Normally mainpage styles
- 
+=wrap
+	width: 1140px
+	margin-left: auto
+	margin-right: auto
+	padding-left: 5px
+	padding-right: 5px
+
+$margin: (100px / 2)
+
+body
+	font-size: 13px
+	font-family: Arial, sans-serif
+	line-height: 1.4
+	color: $def
+
+a
+	color: $blue
+	text-decoration: underline
+	&:hover
+		text-decoration: none
+.g-pseudo-link
+	text-decoration: none
+	border-bottom: 1px dotted $grey
+	&:hover
+		border-color: transparent
+
+.g-box
+	background: $light
+	+border-radius(10px)
+
+.h2
+	font-size: 20px
+	margin-bottom: 0.5em
+	color: $def
+	a
+		color: inherit
+.h3
+	font-size: 14px
+	margin-bottom: 1em
+	font-weight: bold
+	color: $def
+	a
+		color: inherit
+
+.h4
+	font-size: 14px
+	margin-bottom: 1em
+	color: $grey
+	a
+		color: inherit
+	&.hline
+		overflow: hidden
+		span
+			display: inline-block
+			position: relative
+			margin-left: 60px
+			&:before, &:after
+				position: absolute
+				display: inline-block
+				content: '.'
+				overflow: hidden
+				text-indent: -2em
+				width: 2000px
+				top: .7em
+				border-top: 1px solid $grey_light
+			&:after
+				margin-left: 25px
+				left: 100%
+			&:before
+				right: 100%
+				margin-right: 25px
+
+.page
+	margin-top: 90px
+	margin-bottom: 100px
+	+wrap
+
+.container
+	margin-bottom: 40px
+	&.container_extra
+		width: 620px
+		padding-left: 205px
+
+.row
+	position: relative
+	margin-bottom: 35px
+
+.pager
+	margin-bottom: 40px
+.pager__previous
+	display: inline-block
+	vertical-align: top
+
+.group
+	position: relative
+	margin-left: -10px
+	margin-top: -10px
+	&.group_mod
+		padding-right: 40px
+	li
+		display: inline-block
+		vertical-align: top
+		margin-left: 0px
+		margin-top: 10px
+		padding: 2px 10px
+		font-size: 15px
+		a
+			color: $blue
+		&.is-active
+			background: $blue
+			color: #fff
+			a
+				color: inherit
+.group__help
+	font-size: 10px
+	color: $grey
+	position: absolute
+	left: 100%
+	top: 15px
+	margin-left: 30px
+	white-space: nowrap
+	margin-top: 0
+	&:before
+		display: inline-block
+		vertical-align: middle
+		content: "—"
+		margin-right: 20px
+
+.controls
+	position: relative
+	margin-bottom: 8px
+	[class^="icon-"],
+	[class*=" icon-"]
+		position: absolute
+		top: 10px
+		left: 10px
+
+.input
+	height: 36px
+	font-size: 13px
+	color: #2d2d2d
+	width: 100%
+	+box
+	border: 1px solid $grey_light
+	+border-radius(7px)
+	background-color: #fff
+	padding: 0 10px 0 35px
+	+box-shadow(0 2px 2px rgba(255,255,255,.5), inset 0 1px 7px rgba(0,0,1,.09))
+	+placeholder-color(#cfcfcf)
+	&:focus
+		+placeholder-color(transparent)
+
+.btn
+	background-color: #ffe766
+	+g(#ffe766, #fcc456)
+	+border-radius(5px)
+	font-weight: bold
+	color: #1a1a1a
+	font-size: 15px
+	+text-shadow(0 1px 1px #fff)
+	line-height: 20px
+	padding: 6px 30px
+	text-decoration: none
+	&:hover
+		+g(#ffe766, #f1b133)
+
+.dropdown
+	margin-left: 20px
+	&.is-open
+		.btn-toggle
+			&:before
+				+arr(9,5, #000, b)
+.btn-toggle
+	position: relative
+	font-weight: bold
+	font-size: 14px
+	margin-bottom: 1em
+	color: $def
+	padding-left: 17px
+	margin-left: -17px
+	cursor: pointer
+	&:before
+		position: absolute
+		top: 50%
+		margin-top: -4px
+		left: 0
+		+arr(9,5, #000, t)
+		content: ""
+	&:hover
+		a
+			border-bottom: 1px solid transparent
+	a
+		color: inherit
+
+.about
+	p
+		margin-bottom: 25px
+	ul
+		margin-bottom: 35px
+		margin-top: 35px
+		margin-left: 25px
+		padding-left: 10px
+		li
+			position: relative
+			&:before
+				position: absolute
+				left: -10px
+				top: 0
+				content: "–"
+
+.ourcard
+.ourcard__picture
+	margin-bottom: 5px
+	img
+		display: block
+.ourcard__info
+	padding-left: 55px
+	p
+		margin-bottom: 1em
+	a
+		color: $grey
+
+.support
+	margin-bottom: 25px
+	min-height: 48px
+	padding-left: 70px
+	line-height: 1
+	background: url('../img/support.png') no-repeat 0 100%
+.support__tel
+	font-size: 19px
+	color: $def
+.support__telcode
+	display: block
+	margin-left: -5px
+	font-size: 12px
+	color: $grey
+
+.news
+	margin-left: $margin
+	margin-right: $margin
+	padding: 25px 35px
+.news__top
+	+clr
+	.h2
+		float: left
+.news__showall
+	font-size: 12px
+	color: $def
+	float: right
+.news__list
+	+clr
+	margin-left: -35px
+	li
+		float: left
+		width: 300px
+		margin-left: 35px
+		p
+			margin-bottom: 0.5em
+		a
+			color: $def
+			&.news__more
+				display: inline-block
+				color: $grey
+.news__date
+	font-size: 12px
+	color: $blue
+	font-style: italic
+
+
+.partners
+	padding-left: 35px
+	margin-left: $margin
+	margin-right: $margin
+.partners__list
+	font-size: 0
+	margin-top: -20px
+	& > li
+		display: inline-block
+		vertical-align: top
+		text-align: center
+		width: 90px
+		padding: 0 5px
+		margin-top: 20px
+		font-size: 10px
+		a
+			display: block
+			color: $def
+.partenrs__icon
+	margin-bottom: 5px
+	img
+		display: block
+		margin-left: auto
+		margin-right: auto
+.partners__text
+	line-height: 1.2

@@ -1,0 +1,100 @@
+.objects
+	position: relative
+	+clr
+.objects__prev,
+.objects__next
+	position: absolute
+	display: block
+	top: 190px
+	+hidetext
+	cursor: pointer
+	+opacity(.8)
+	&:hover
+		+opacity(1)
+.objects__prev
+	left: -45px
+	+s(prev)
+.objects__next
+	right: -45px
+	+s(next)
+
+.object
+	display: inline-block
+	vertical-align: top
+	width: 380px
+	white-space: normal
+.object__in
+	position: relative
+	padding-top: 85px
+.object__title
+	position: absolute
+	top: 0
+	left: 0
+	padding: 0 8%
+	font-size: 24px
+	color: $def
+	font-weight: bold
+	line-height: 1
+	span
+		display: block
+		font-size: 40px
+		color: $orange
+.object__picture
+	height: 220px
+	overflow: hidden
+	margin-bottom: 20px
+	img
+		display: block
+		max-width: 100%
+		margin-left: auto
+		margin-right: auto
+.object__form
+	width: 250px
+	padding: 20px 20px 15px 20px
+	margin: 0 0 10px 45px
+.object__tools
+	position: relative
+	a
+		color: $grey
+		font-size: 11px
+	.btn
+		position: absolute
+		top: 0
+		right: 0
+.object__contacts
+	text-align: center
+.object__tel
+	font-size: 20px
+	font-weight: bold
+	span
+		font-size: 13px
+		font-weight: normal
+		margin-right: 3px
+.object__location
+	font-size: 11px
+	i
+		display: inline-block
+		vertical-align: middle
+		+s(pin)
+		margin-right: 5px
+	a
+		color: $def
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

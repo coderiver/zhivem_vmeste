@@ -1,0 +1,103 @@
+
+.header
+	position: relative
+	z-index: 1
+	&.header_extra
+		background: url(../img/sky.png) no-repeat 40% 0
+		.header__in
+			&:before
+				content: none
+
+.header__in
+	position: relative
+	+wrap
+	padding-top: 90px
+	+clr
+	&:before
+		position: absolute
+		top: 0
+		left: -30px
+		+s(cubes)
+		content: ""
+
+.header__logo
+	float: left
+	+s(logo)
+	margin-right: 48px
+	a
+		display: block
+		height: 100%
+		+hidetext
+
+.header__menu
+	float: left
+.header__menu-column
+	display: table-cell
+	vertical-align: top
+	padding-left: 25px
+	&:first-child
+		padding-left: 0
+	&.header__menu-column_extra
+		vertical-align: bottom
+.header__menu-clause
+	margin-top: 10px
+	a
+		position: relative
+		margin-left: 25px
+		color: $def
+		text-decoration: none
+		b
+			font-weight: normal
+			border-bottom: 1px solid $grey_light
+		&:hover
+			b
+				border: none
+.header__menu-icon
+	position: absolute
+	right: 100%
+	margin-right: 5px
+	&.icon-news
+		top: 3px
+	&.icon-contact
+		top: 2px
+	&.icon-card
+		top: 2px
+
+
+
+.profile
+	float: right
+	+box
+	width: 245px
+	padding: 12px 20px
+	a
+		display: block
+		color: $def
+		text-decoration: none
+		b
+			font-weight: normal
+			border-bottom: 1px solid $grey_light
+		&:hover
+			b
+				border: none
+.profile__user
+	float: left
+	position: relative
+	width: 62%
+	padding-left: 27px
+	a
+		text-decoration: none
+		color: $def
+		+text-overflow
+.profile__userpic
+	position: absolute
+	top: -2px
+	left: 0
+	max-width: 19px
+	min-height: 19px
+	display: block
+	+border-radius(50%)
+.profile__username
+	font-weight: bold
+.profile__command
+	float: right

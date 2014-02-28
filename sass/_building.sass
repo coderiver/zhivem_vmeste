@@ -1,0 +1,175 @@
+.building
+	position: relative
+	width: 735px
+	height: 480px
+	margin-top: 40px
+	margin-left: -20px
+	background: url('../img/map.png') no-repeat
+	margin-bottom: 40px
+
+.building__points
+.building__point
+	position: absolute
+	cursor: pointer
+	&:hover, &.is-active
+		.building__point-num
+			+g(#4bbbf8, #11a5f5)
+			&:before
+				+arr(24,10, #11a5f5, b)
+	&.is-disabled
+		+gray
+		cursor: default
+		+opacity(.8)
+		.building__point-num
+			display: none
+	&.building__point_1
+		bottom: 79px
+		left: 55px
+		+s(b01)
+		&:hover, &.is-active
+			+s(b01_h)
+		&.is-disabled
+			+s(b01)
+		.building__point-num
+			bottom: 26px
+			left: 18px
+	&.building__point_2
+		bottom: 125px
+		left: 110px
+		+s(b02)
+		&:hover, &.is-active
+			+s(b02_h)
+		&.is-disabled
+			+s(b02)
+		.building__point-num
+			top: -18px
+			left: 69px
+	&.building__point_3
+		bottom: 98px
+		left: 311px
+		+s(b03)
+		&:hover, &.is-active
+			+s(b03_h)
+		&.is-disabled
+			+s(b03)
+		.building__point-num
+			top: -16px
+			left: 55px
+	&.building__point_4
+		bottom: 151px
+		left: 299px
+		+s(b04)
+		&:hover, &.is-active
+			+s(b04_h)
+		&.is-disabled
+			+s(b04)
+		.building__point-num
+			top: -21px
+			left: 64px
+	&.building__point_5
+		bottom: 92px
+		right: 122px
+		+s(b05)
+		&:hover, &.is-active
+			+s(b05_h)
+		&.is-disabled
+			+s(b05)
+		.building__point-num
+			right: 11px
+			bottom: 23px
+	&.building__point_6
+		bottom: 178px
+		right: 122px
+		+s(b06)
+		&:hover, &.is-active
+			+s(b06_h)
+		&.is-disabled
+			+s(b06)
+		.building__point-num
+			top: -22px
+			left: 69px
+	&.building__point_7
+		top: 16px
+		left: 204px
+		+s(b07)
+		&:hover, &.is-active
+			+s(b07_h)
+		&.is-disabled
+			+s(b07)
+		.building__point-num
+			top: -23px
+			left: 79px
+	&.building__point_8
+		top: 59px
+		left: 205px
+		+s(b08)
+		&:hover, &.is-active
+			+s(b08_h)
+		&.is-disabled
+			+s(b08)
+		.building__point-num
+			top: 44px
+			left: 0
+	&.building__point_9
+		top: 113px
+		left: 291px
+		+s(b09)
+		&:hover, &.is-active
+			+s(b09_h)
+		&.is-disabled
+			+s(b09)
+		.building__point-num
+			right: 17px
+			bottom: 28px
+	&.building__point_10
+		top: 51px
+		right: 192px
+		+s(b10)
+		&:hover, &.is-active
+			+s(b10_h)
+		&.is-disabled
+			+s(b10)
+		.building__point-num
+			top: -24px
+			left: 53px
+	&.building__point_11
+		top: 64px
+		right: 106px
+		+s(b11)
+		&:hover, &.is-active
+			+s(b11_h)
+		&.is-disabled
+			+s(b11)
+		.building__point-num
+			top: 39px
+			right: 0
+	&.building__point_12
+		top: 151px
+		right: 193px
+		+s(b12)
+		&:hover, &.is-active
+			+s(b12_h)
+		&.is-disabled
+			+s(b12)
+		.building__point-num
+			top: -16px
+			left: 56px
+
+.building__point-num
+	position: absolute
+	width: 24px
+	height: 24px
+	line-height: 29px
+	text-align: center
+	color: #fff
+	font-size: 13px
+	font-weight: bold
+	+g(#777777, #565656)
+	+border-radius(4px 4px 0 0)
+	&:before
+		position: absolute
+		top: 100%
+		+arr(24,10, #565656, b)
+		content: ""
+		left: 50%
+		margin-left: -12px
